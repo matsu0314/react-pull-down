@@ -50,6 +50,7 @@ export const PullDown = React.forwardRef<HTMLSelectElement, Props>(
             </option>
           ))}
         </select>
+        {/* エラーのCSSクラス名は環境によって変更する */}
         {error && <p className="mt-1 text-xs text-red-400">{error}</p>}
       </>
     );
